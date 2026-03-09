@@ -7,9 +7,9 @@ document.getElementById('breedBtn').addEventListener('click', function() {
 // Calculate total price for chicken orders
 function calculatePrice() {
     const quantity = document.getElementById('quantity').value;
-    const pricePerKg = 5.99;
-    const total = quantity * pricePerKg;
+    const total = quantity * 90;
     document.getElementById('total').textContent = `Total: R${total.toFixed(2)}`;
+}
 
 document.getElementById('quantity').addEventListener('input', calculatePrice);
 // Add new review dynamically
